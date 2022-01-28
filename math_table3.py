@@ -93,25 +93,25 @@ def arithmetic_formulas(var):
         print(spacing(i))
     return outside
 
-f1 = [['18+41+8-134+12-14'],['23+2392942-232'],['12+2-4+1'],['']]
-out = spacing('18+41+8-134+12-14')
-out2 = spacing('23+2392942-232')
-out3 = spacing('12+2-4+1')
-# 1 list into 3 strings of formulas
-splitline1 = out.splitlines()
-print(splitline1,"splitlines #1")
-splitline2 = out2.splitlines()
-splitline3 = out3.splitlines()
-print(out, "out1")
-print(out2, "out2")
-print(out3, "out3")
-zipped = list(zip_longest(splitline1, splitline2, splitline3))
+f1 = ['18+4','12-5']
+f2 = []
+for i in f1:
+    out = spacing(i)
+
+    splitline1 = out.splitlines()
+    print(splitline1, "splitlines # 1")
+    f2.append(splitline1)
+    print(out, "out1")
+print(f2)
+
+
+
+zipped = list(zip_longest(*f2))
 print(zipped, "zip")
 outlines = ''
 # improve this code here
 print(splitline1, "splitline1")
-print(splitline2, "splitline2")
-print(splitline3, "splitline3")
+
 print(removenone(zipped), 'removed none')
 print(zipped, "zipped splitlines")
 for i in zipped:
@@ -130,16 +130,4 @@ for i in zipped:
 
 print(outlines,"outlines")
 
-outside1 = arithmetic_formulas(["19 + 6", "20 - 9", "12 + 10"])
-print(outside1, "outside")
-out3 = spacing('999 + 1')
-out4 = spacing('-99 - 99')
-
-zipped1 = list(zip_longest(outside1))
-
-print(zipped1, "zippped")
-
-
-
-calculate = eval('18 + 499999 + 8 - 134 + 123913 - 14214')
 
