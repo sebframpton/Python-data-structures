@@ -93,7 +93,7 @@ def arithmetic_formulas(var):
         print(spacing(i))
     return outside
 
-f1 = ['18+4','12-5']
+f1 = ['18+4','12-5+1']
 f2 = []
 for i in f1:
     out = spacing(i)

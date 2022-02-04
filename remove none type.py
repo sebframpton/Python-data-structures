@@ -11,4 +11,5 @@ for i in l1:
         l3.append(i)
     
 l4 = ''.join(l3)
-print(l4)
+l5 = l4.splitlines()
+print(l5)

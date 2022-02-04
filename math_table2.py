@@ -20,9 +20,7 @@ def spacing(formula):
     z = y.split("-")
     j = '\n-'.join(z)
     a = j.split()
-    print(j, "j contains")
-    print(a, "a contains")
-    print(z, "z contains")
+    
     c = []
     calculate = eval(formula)
     cal_len = len(str(calculate))
@@ -52,7 +50,7 @@ def spacing(formula):
         space = " " * sub
     
     b = j.splitlines()
-    print(b, "check spaces")
+   
     t = []
     s = []
     for r in b:
@@ -97,10 +95,10 @@ f1 = ['18+41+8-134+12-14','23+2392942-232','12+2-4+1']
 f2 = ''
 
 for i in f1:
-    splitline1 = i.splitlines()
-    print(splitline1)
+    f2 = f2 + i
+    splitline1 = f2.splitlines()
     out = spacing(i)
-    print(out)
+    print(out, "out 2")
 
 for j in splitline1:
     zipped = list(zip_longest(j))
