@@ -8,6 +8,7 @@ line2 = []
 for i in zipped:
     line2.append(i)
   
-    
-    line3 = line1 + i
-print(line3)
+
+print(line2)
+    #line3 = line1 + i
+#print(line3)
