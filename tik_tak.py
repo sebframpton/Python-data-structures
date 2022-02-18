@@ -1,4 +1,4 @@
-tt = [True, True, False]
+tt = [True, False, False]
 a = "o"
 b = "x"
 s = ''

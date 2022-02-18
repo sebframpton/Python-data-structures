@@ -4,7 +4,7 @@ l2 = ["a", "b","c", "d"]
 
 l3 = list(zip_longest(l1,l2))
 l4 = []
-
+print(l3)
 for i in l3:
     l5 = []
    # print(type(i[0]),i)
