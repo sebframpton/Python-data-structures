@@ -28,12 +28,12 @@ new_list = list(zip_longest(f3, f4))
 
 
 s = ''
-'''
+
 for i in new_list:
     for j in i:
         s = s + j
     print(s)
-'''
+
 print(new_list)
 
 expected_format = '''\
